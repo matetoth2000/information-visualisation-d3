@@ -1,0 +1,60 @@
+/* ================================
+   GLOBAL PAGE STYLING
+   ================================ */
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 20px;
+  text-align: center;   /* Center headings, text, slider */
+  background-color: #fafafa; /* subtle background (optional) */
+}
+
+/* ================================
+   MAP CONTAINER
+   ================================ */
+
+#map-container {
+  border: 1px solid #ccc;
+  background: white;        /* makes the map stand out (optional) */
+  margin: 20px auto;        /* centers the container */
+  width: 1000px;            /* must match SVG width */
+  border-radius: 6px;       /* slight rounding (optional) */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* soft shadow (optional) */
+}
+
+/* ================================
+   SLIDER CONTROLS
+   ================================ */
+
+#controls {
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;  /* center slider + label horizontally */
+  gap: 10px;
+  max-width: 600px;
+}
+
+#year-slider {
+  width: 300px;
+  cursor: pointer;
+}
+
+/* ================================
+   TOOLTIP STYLE
+   ================================ */
+
+#tooltip {
+  position: absolute;
+  pointer-events: none;     /* tooltip does not block mouse events */
+  background: white;
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  opacity: 0;               /* hidden by default */
+  transition: opacity 0.2s ease;
+  z-index: 10;
+}
